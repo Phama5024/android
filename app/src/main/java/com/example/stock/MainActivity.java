@@ -27,8 +27,10 @@ public class MainActivity extends AppCompatActivity {
                 Fragment selectedFragment = null;
 
                 if (item.getItemId() == R.id.nav_home) {
+                    selectedFragment = new HomeFragment();
+                }else if (item.getItemId() == R.id.nav_exchange) {
                     selectedFragment = new ExchangeRateFragment();
-                } else if (item.getItemId() == R.id.nav_charts) {
+                }else if (item.getItemId() == R.id.nav_charts) {
                     selectedFragment = new StockFragment();
                 } else if (item.getItemId() == R.id.nav_oil_chart) {
                     selectedFragment = new OilChartFragment();
