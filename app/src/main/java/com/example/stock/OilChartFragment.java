@@ -69,6 +69,8 @@ public class OilChartFragment extends Fragment {
         // Set up chart
         setupChart();
 
+        fetchOilData("WTI");
+
         return view;
     }
 
